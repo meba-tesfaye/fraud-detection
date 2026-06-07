@@ -1,0 +1,14 @@
+"""
+Production configuration artifacts for the fraud detection pipeline.
+Centralizes paths, random states, and model parameters.
+"""
+
+# File Paths
+RAW_FRAUD_DATA_PATH = "data/raw/Fraud_Data.csv"
+RAW_IP_DATA_PATH = "data/raw/IpAddress_to_Country.csv"
+CLEANED_DATA_PATH = "data/processed/cleaned_fraud_data.csv"
+
+# Model & Preprocessing Constants
+RANDOM_STATE = 42
+TEST_SIZE = 0.2
+SMOTE_SAMPLING_STRATEGY = "auto"
